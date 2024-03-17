@@ -1,0 +1,63 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #ea5455;
+  --secondary: #087ea4;
+  --primary-btn: #ea5455;
+  --primary-btn-hover: #b33e3f;
+  --secondary-btn-hover: #035069;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+ body {
+  font-size: 16px;
+  min-height: 100vh;
+ }
+
+ ul, ol, li {
+  list-style: none;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.react-modal-overlay {
+  background: rgba(75, 75, 75, 0.6);
+  bottom: 0;
+  overflow: hidden auto;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 200;
+}
+
+.react-modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 50%;
+  padding: 40px;
+  margin: 50px auto;
+  border-radius: 6px;
+  background-color: white;
+}

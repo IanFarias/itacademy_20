@@ -1,0 +1,40 @@
+.button {
+    width: 100%;
+    color: white;
+    min-height: 44px;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: var(--primary-btn);
+}
+
+.btn-primary:hover, .btn-primary:focus-visible {
+    background-color: var(--primary-btn-hover);
+}
+
+.iconButton {
+    width: auto;
+    height: auto;
+    background: transparent;
+    color: black;
+}
+
+.iconButton:hover, .iconButton:focus-visible {
+    background: transparent;
+}
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover, .btn-secondary:focus-visible {
+    background-color: var(--secondary-btn-hover);
+}
+
+.button:disabled {
+    background-color: #e7e7e7;
+}
+

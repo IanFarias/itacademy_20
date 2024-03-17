@@ -1,0 +1,25 @@
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+button.modal-close-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    right: 0;
+}
