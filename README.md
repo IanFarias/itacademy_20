@@ -4,6 +4,7 @@
 
 - Instale o NodeJS na versão 18.15.0
 - Baixe o editor de código fonte [Visual Studio Code](https://code.visualstudio.com/)
+- Instale as extensões do Prettier - Code formatter e ESLint
 - Instale em sua máquina um dos gerenciadores de pacote a seguir [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install/#windows-stable) ou [NodeJs(NPM)](https://nodejs.org/en/download/)
 
 ## Rodar Aplicação
