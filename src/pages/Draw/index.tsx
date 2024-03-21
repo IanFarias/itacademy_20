@@ -101,7 +101,7 @@ const Draw: React.FC = () => {
               </table>
             </div>
           ) : (
-            <h3 style={{ color: '#ea5455' }}>Não Houve Vencedores!</h3>
+            <h3 style={{ color: '#ea5455' }}>Não houve vencedores!</h3>
           )}
           <h2>Números Apostados: </h2>
           <div className="end__table-container">

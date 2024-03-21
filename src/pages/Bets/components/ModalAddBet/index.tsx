@@ -2,7 +2,6 @@ import { useContext, useState } from 'react';
 import Button from '../../../../components/Button';
 import Modal from '../../../../components/Modal';
 import { ONLY_NUMBERS } from '../../../../constants/regexPatterns';
-import Bet from '../../../../core/Bet';
 import { NUMBERS_OPTION } from '../../../../constants/numbers';
 import { GameContext } from '../../../../context/GameContext';
 import './styles.css';
@@ -90,26 +89,23 @@ const ModalAddBet: React.FC<ModalProps> = ({
       return;
     }
 
-    setInputValues((currentValues) => ({ ...currentValues, [name]: value }));
+    setInputValues((currentValues) => ({
+      ...currentValues,
+      [name]: value.trim(),
+    }));
   };
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    const { cpf, name, numbers, isLittleSurprise } = inputValues;
+    const { cpf } = inputValues;
 
-    if (!cpf.match(ONLY_NUMBERS || cpf.length < 11)) {
+    if (!cpf.match(ONLY_NUMBERS) || cpf.length < 11) {
       setInvalidValues((currentValues) => ({
         ...currentValues,
         cpf: 'CPF Inválido!',
       }));
 
       return;
-    }
-
-    const newBet = new Bet(name, cpf, numbers);
-
-    if (isLittleSurprise) {
-      newBet.littleSuprise();
     }
 
     game?.addNewBet({ ...inputValues });

@@ -79,7 +79,7 @@ class Game {
         this.drawingRounds++;
 
         resolve(this.status);
-      }, 500);
+      }, 200);
     });
   }
 
@@ -106,7 +106,7 @@ class Game {
         }
 
         resolve(Status.DRAW_PHASE);
-      }, 200);
+      }, 500);
     });
   }
 
