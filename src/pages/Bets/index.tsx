@@ -36,7 +36,7 @@ const Bets: React.FC = () => {
           onClick={handleDraw}
           disabled={game?.bets.length === 0}
         >
-          Sortear
+          Ir para sorteio
         </Button>
       </div>
       <div className="bet__table-container">
