@@ -1,16 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '../../components/Button';
 import { GameContext } from '../../context/GameContext';
-import { useContext } from 'react';
-import './styles.css';
+import { useContext, useEffect } from 'react';
 import { SCREEN_PATHS } from '../../routes';
+import './styles.css';
 
 const Home: React.FC = () => {
-  const { createGame } = useContext(GameContext);
+  const { createGame, start } = useContext(GameContext);
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  useEffect(() => {
     createGame();
+  }, []);
+
+  const handleClick = () => {
+    start();
     return navigate(SCREEN_PATHS.bets);
   };
 

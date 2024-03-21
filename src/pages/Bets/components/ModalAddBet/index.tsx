@@ -97,7 +97,7 @@ const ModalAddBet: React.FC<ModalProps> = ({
     event.preventDefault();
     const { cpf, name, numbers, isLittleSurprise } = inputValues;
 
-    if (!cpf.match(ONLY_NUMBERS)) {
+    if (!cpf.match(ONLY_NUMBERS || cpf.length < 11)) {
       setInvalidValues((currentValues) => ({
         ...currentValues,
         cpf: 'CPF Inválido!',

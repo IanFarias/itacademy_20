@@ -1,4 +1,4 @@
-import Random from './Random';
+import Draw from './Draw';
 
 class Bet {
   static idCount: number = 1000;
@@ -18,17 +18,11 @@ class Bet {
   }
 
   littleSuprise() {
-    this.numbers = [];
-
     if (this.numbers.length > 0) {
       return;
     }
 
-    for (let i = 0; i < 5; i++) {
-      const number = Random.getRandomNumber(1, 50, this.numbers);
-
-      this.numbers.push(number);
-    }
+    this.numbers = Draw.drawNumbers(5);
   }
 }
 

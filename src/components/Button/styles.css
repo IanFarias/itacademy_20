@@ -8,6 +8,10 @@
     border-radius: 6px;
 }
 
+.button:disabled {
+    color: #666666;
+}
+
 .btn-primary {
     background-color: var(--primary-btn);
 }

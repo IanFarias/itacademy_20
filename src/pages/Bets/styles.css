@@ -8,52 +8,15 @@ main {
     justify-content: space-between;
 }
 
-.table {
-    width: 100%;
-    max-height: 50vh;
-    margin-bottom: 1rem;
-    color: #212529;
-    background-color: whitesmoke;
-}
 
-.table-bordered {
-    border: 1px solid #dee2e6;
-}
-
-table {
-    border-collapse: collapse;    
-}
-
-th {
-    text-align: -webkit-match-parent;
-}
-
-.table thead th {
-    border-bottom-width: 2px;
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-}
-
-.table-bordered thead td, .table-bordered thead th {
-    border-bottom-width: 2px;
-}
-
-.table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-}
-
-.table-bordered td, .table-bordered th {
-    border: 1px solid #dee2e6;
-}
-
-.table td, .table th {
-    padding: 0.75rem;
-
-}
 
 .add-bet-btn {
     width: 200px;
     margin: 40px 0;
 }
 
+.bet__table-container {
+    max-height: 60vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}

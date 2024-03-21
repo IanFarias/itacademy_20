@@ -1,0 +1,27 @@
+main.end-main h2 , main.end-main h3, main.end-main h1{
+    margin-bottom: 20px;
+}
+
+
+main.end-main h2 {
+    margin-top: 20px;
+}
+
+main.end-main button {
+    margin-top: 40px;
+}
+
+.end__table-container {
+    max-height: 50vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.numbersDrawn-table-container {
+    max-height: 20vh;
+    margin-bottom: 20px;
+}
+
+.numbersDrawn-table-container table {
+    text-align: center;
+}
